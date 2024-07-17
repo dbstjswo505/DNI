@@ -1,0 +1,35 @@
+# general
+seed: 1
+device: 'cuda'
+input_video: 'data/man_walk.mp4'
+output_path: 'output'
+
+# data
+ddim_latents_path: 'initial_latents'
+n_inversion_steps: 500 # for retrieving the latents of the inversion
+n_frames: 72
+w: 512
+h: 512
+
+# editing guidance mask save
+target_step: 999 # 1, 3, ..., 999
+target_block: 'mid' # 'down', 'mid', 'up'
+target_layer_dim: 1280  # down: 320, 640, 1280, mid: 1280, up: 1280, 640, 320
+target_words: ['shiny', 'silver', 'robot', 'snow']
+rgd: ['shiny', 'silver', 'robot', 'snow'] # automatically, non_rgd = target_words - rgd
+
+# dni
+dni_apply_step: 0.5
+alpha: 0.7
+beta: 0.0
+gamma: 1.5 # overall editability higher values are effective, too high is noisy
+
+# diffusion
+guidance_scale: 7.5
+n_timesteps: 50
+source_prompt: "A man is walking"
+target_prompt: "A shiny silver robot is walking on the snow"
+negative_prompt: "ugly, blurry, low res, unrealistic, unaesthetic"
+batch_size: 4
+module: 'propagation' # three types of temporal modules: 'propagation', 'causal_attention', 'basic_attention'
+

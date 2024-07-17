@@ -1,0 +1,25 @@
+pretrained_model_path: "./outputs/astronaut_thumbs-up"
+image_path: "./data/astronaut"
+prompt: "Astronaut is walking"
+prompts:
+  - "Astronaut is walking"
+  - "Astronaut gives a thumbs-up under the moon"
+eq_params:
+  words:
+    - 'thumbs-up'
+  values:
+    - 5.0
+save_name: "astronaut_thumbs-up"
+
+# editing guidance mask save
+target_step: 21 # 1, 21, 41, 61, ...,
+target_block: 'mid' # 'down', 'mid', 'up'
+target_layer_dim: 1280  # down: 320, 640, 1280, mid: 1280, up: 1280, 640, 320
+target_words: ['Astronaut']
+rgd: ['Astronaut'] # automatically, rgd = target_words - non_rgd
+
+# dni
+alpha: 0.9
+beta: 0.9
+gamma: 1.0 # overall editability higher values are effective
+

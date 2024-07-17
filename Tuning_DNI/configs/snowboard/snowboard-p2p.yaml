@@ -1,0 +1,26 @@
+pretrained_model_path: "./outputs/snowboard"
+image_path: "./data/snowboard"
+prompt: "A man on the snowboard stretches a hand"
+prompts: 
+    - "A man on the snowboard stretches a hand"
+    - "A man on the snowboard gives a thumbs-up"
+eq_params:
+  words:
+    - 'thumbs-up'
+  values:
+    - 3.0
+save_name: "snowboard_man_thumbs-up"
+sample_frame_rate: 1
+
+# editing guidance mask save
+target_step: 21 # 1, 21, 41, 61, ...,
+target_block: 'mid' # 'down', 'mid', 'up'
+target_layer_dim: 1280  # down: 320, 640, 1280, mid: 1280, up: 1280, 640, 320
+target_words: ['man', 'hand']
+rgd: ['man'] # automatically, rgd = target_words - non_rgd
+
+# dni
+alpha: 0.9
+beta: 0.9
+gamma: 1.0 # overall editability higher values are effective
+
