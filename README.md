@@ -27,7 +27,7 @@ python ddim_inversion.py
 python dni.py
 ```
 
-## environment for tuning based dni
+## Environment for tuning based DNI
 ```
 conda create -n dni_tuning python=3.10
 conda activate dni_tuning
