@@ -1,6 +1,6 @@
 # DNI: Dilutional Noise Initialization for Diffusion Video Editing, ECCV 2024
 
-[![arXiv](https://img.shields.io/badge/arXiv-FRAG-b31b1b.svg)](https://arxiv.org/abs/2307.10373) 
+[![arXiv](https://img.shields.io/badge/arXiv-DNI-b31b1b.svg)](https://arxiv.org/abs/2307.10373) 
 
 
 **DNI** is a framework that enhances the effectiveness of edited videos by mitigating rigidity from original input video visual structures.
