@@ -31,7 +31,7 @@ python dni.py
 ```
 conda create -n dni_tuning python=3.10
 conda activate dni_tuning
-cd tuning_dni
+cd Tuning_DNI
 pip install -r requirements.txt
 ```
 
@@ -48,10 +48,10 @@ python dni.py
 
 ## Acknowledgement
 
-This code is implemented on top of following contributions: [TAV](https://github.com/showlab/Tune-A-Video), [TokenFlow](https://github.com/omerbt/TokenFlow), [HuggingFace](https://github.com/huggingface/transformers), [FLATTEN](https://github.com/yrcong/flatten), [FateZero](https://github.com/ChenyangQiQi/FateZero), [Prompt-to-prompt](https://github.com/google/prompt-to-prompt) 
+This code is implemented on top of following contributions: [TAV](https://github.com/showlab/Tune-A-Video), [TokenFlow](https://github.com/omerbt/TokenFlow), [HuggingFace](https://github.com/huggingface/transformers), [Video-P2P](https://github.com/dvlab-research/Video-P2P), [FateZero](https://github.com/ChenyangQiQi/FateZero), [Prompt-to-prompt](https://github.com/google/prompt-to-prompt) 
 
 We thank the authors for open-sourcing these great projects and papers!
 
-This work was supported by Institute for Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government(MSIT) (No. 2021-0-01381, Development of Causal AI through Video Understanding and Reinforcement Learning, and Its Applications to Real Environments) and partly supported by Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government(MSIT) (No.2022-0-00184, Development and Study of AI Technologies to Inexpensively Conform to Evolving Policy on Ethics).
+This work was supported by Institute for Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government(MSIT) (No. 2021-0-01381, Development of Causal AI through Video Understanding and Reinforcement Learning, and Its Applications to Real Environments) and partly supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government(MSIT) (No. 2022R1A2C2012706).
 
 
